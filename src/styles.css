@@ -30,8 +30,10 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-gold: var(--gold);
+--color-gold: var(--gold);
   --color-gold-foreground: var(--gold-foreground);
+  --color-italy-green: var(--italy-green);
+  --color-italy-green-foreground: var(--italy-green-foreground);
   --animate-marquee: marquee 42s linear infinite;
 }
 
@@ -61,6 +63,9 @@
   /* New warm gold accent, pulled from the boutique/vault reference imagery */
   --gold: oklch(0.74 0.13 82);
   --gold-foreground: oklch(0.18 0.02 62);
+  /* Italian flag green, deep and muted to sit alongside the red/gold palette */
+  --italy-green: oklch(0.42 0.09 152);
+  --italy-green-foreground: oklch(0.98 0 0);
 }
 
 @keyframes marquee {
