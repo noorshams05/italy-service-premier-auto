@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import type { ReactNode } from "react";
+import { motion, useInView } from "framer-motion";
+import { useRef, type ReactNode } from "react";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -36,12 +36,15 @@ export function MaskReveal({
   delay?: number;
   className?: string;
 }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: "0px 0px -40px 0px" });
+
   return (
     <motion.div
+      ref={ref}
       className={className}
       initial={{ clipPath: "inset(0 0 100% 0)" }}
-      whileInView={{ clipPath: "inset(0 0 0% 0)" }}
-      viewport={{ once: true, margin: "-60px" }}
+      animate={{ clipPath: inView ? "inset(0 0 0% 0)" : "inset(0 0 100% 0)" }}
       transition={{ duration: 1.1, delay, ease: EASE }}
     >
       {children}

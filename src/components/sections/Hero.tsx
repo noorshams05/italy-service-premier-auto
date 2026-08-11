@@ -18,14 +18,18 @@ export function Hero() {
   return (
     <section ref={ref} className="relative min-h-[100svh] overflow-hidden">
       <motion.div style={{ y, scale }} className="absolute inset-0">
-        <img
+        {/* slow continuous parallax drift on top of the scroll parallax */}
+        <motion.img
           src={heroImg}
-          alt="Italian exotic sports car in the Italy Service workshop"
+          alt="Ferrari 360 engine bay inside the Italy Service workshop in Las Vegas"
           width={1920}
           height={1088}
+          animate={{ scale: [1.08, 1.16, 1.08], x: ["-1.5%", "1.5%", "-1.5%"], y: ["1%", "-1%", "1%"] }}
+          transition={{ duration: 32, ease: "easeInOut", repeat: Infinity }}
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/55 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+        <div className="absolute inset-0 bg-background/25" />
       </motion.div>
 
       <img
@@ -49,14 +53,14 @@ export function Hero() {
           Las Vegas · Since the beginning
         </motion.p>
 
-        <h1 className="mt-8 font-display text-[clamp(3.4rem,15vw,13rem)] leading-[0.82] tracking-[-0.045em]">
+        <h1 className="mt-8 font-display text-[clamp(3.4rem,15vw,13rem)] font-medium leading-[0.86] tracking-[-0.03em]">
           {words.map((word, wi) => (
-            <span key={word} className="block overflow-hidden">
+            <span key={word} className="block overflow-hidden pb-[0.06em]">
               <motion.span
                 className="block"
-                initial={{ y: "110%" }}
-                animate={{ y: 0 }}
-                transition={{ duration: 1.1, delay: 0.15 + wi * 0.12, ease: EASE }}
+                initial={{ y: "110%", skewY: 4 }}
+                animate={{ y: 0, skewY: 0 }}
+                transition={{ duration: 1.2, delay: 0.15 + wi * 0.16, ease: EASE }}
               >
                 {word}
               </motion.span>
@@ -68,7 +72,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.6, ease: EASE }}
-          className="mt-10 max-w-xl text-lg leading-relaxed text-foreground/75 sm:text-xl"
+          className="mt-10 max-w-2xl font-display text-[clamp(1.25rem,2.6vw,1.9rem)] font-normal italic leading-[1.35] text-foreground/85"
         >
           {site.tagline}.
         </motion.p>
