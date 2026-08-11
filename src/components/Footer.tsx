@@ -9,7 +9,7 @@ export function Footer() {
       <div className="mx-auto max-w-[1400px] px-6 py-20 lg:px-10">
         <div className="grid gap-14 lg:grid-cols-[1.2fr_1fr_1fr]">
           <div>
-            <img src={logo.url} alt="Italy Service" className="h-14 w-auto" />
+            <img src="/logo.png alt="Italy Service" className="h-14 w-auto" />
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
               Independent Ferrari, Maserati and Alfa Romeo specialists serving Las Vegas with honest
               diagnostics and fair pricing.
