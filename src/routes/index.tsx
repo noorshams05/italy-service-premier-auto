@@ -9,9 +9,9 @@ import { Reviews } from "@/components/sections/Reviews";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CtaBand } from "@/components/sections/CtaBand";
 
-const title = "Italy Service — Ferrari, Maserati & Alfa Romeo Specialists in Las Vegas";
+const title = "Italy Service — Ferrari, Maserati, Alfa Romeo, Porsche & Mercedes-Benz Specialists in Las Vegas";
 const description =
-  "Independent Las Vegas service center for Ferrari, Maserati, Alfa Romeo and European exotics. Honest diagnostics, fair pricing, 4.8 stars from 163 reviews.";
+  "Italy Service — Las Vegas' Ferrari, Maserati, Alfa Romeo, Porsche & Mercedes-Benz specialists since 1975. Honest diagnostics, fair pricing, 4.8 stars from 163 reviews.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
