@@ -9,9 +9,9 @@ export function Footer() {
         <div className="grid gap-14 lg:grid-cols-[1.2fr_1fr_1fr]">
           <div>
             <img src="/logo.png" alt="Italy Service" className="h-14 w-auto" />
-            <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Independent Ferrari, Maserati and Alfa Romeo specialists serving Las Vegas with honest
-              diagnostics and fair pricing.
+     <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
+              Las Vegas' Italian and German specialists since 1975. Ferrari, Maserati, Alfa Romeo,
+              Porsche, Mercedes-Benz and more — serviced right.
             </p>
             <div className="mt-8 flex gap-4">
               {[Instagram, Facebook, Youtube].map((Icon, i) => (
@@ -77,9 +77,9 @@ export function Footer() {
 
         <div className="mt-16 flex flex-col gap-3 border-t border-border pt-8 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Italy Service. All rights reserved.</p>
-          <p>
-            Independent service center. Not affiliated with Ferrari S.p.A., Maserati S.p.A. or any
-            manufacturer.
+        <p>
+            Independent service center. Not affiliated with Ferrari S.p.A., Maserati S.p.A.,
+            Porsche AG, Mercedes-Benz AG or any manufacturer.
           </p>
         </div>
       </div>
