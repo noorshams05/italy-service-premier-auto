@@ -3,9 +3,9 @@ import { Hero } from "@/components/sections/Hero";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { AboutSplit } from "@/components/sections/AboutSplit";
+import { FacilityShowcase } from "@/components/sections/FacilityShowcase";
 import { Marques } from "@/components/sections/Marques";
 import { Reviews } from "@/components/sections/Reviews";
-import { Gallery } from "@/components/sections/Gallery";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CtaBand } from "@/components/sections/CtaBand";
 
@@ -32,9 +32,9 @@ function Home() {
       <TrustBar />
       <ServicesGrid />
       <AboutSplit />
+      <FacilityShowcase />
       <Marques />
       <Reviews />
-      <Gallery />
       <ContactSection />
       <CtaBand />
     </>
