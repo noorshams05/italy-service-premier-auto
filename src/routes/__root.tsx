@@ -127,6 +127,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <div aria-hidden className="grain-overlay" />
       <Nav />
       <main>
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
