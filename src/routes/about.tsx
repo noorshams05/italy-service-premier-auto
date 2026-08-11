@@ -6,9 +6,9 @@ import { AboutSplit } from "@/components/sections/AboutSplit";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { CtaBand } from "@/components/sections/CtaBand";
 
-const title = "About Italy Service — Independent Italian Car Specialists, Las Vegas";
+const title = "About Italy Service — Independent Italian & German Car Specialists, Las Vegas";
 const description =
-  "Meet the Las Vegas shop Italian car owners trust: honest diagnostics, no upselling, and technicians who specialize in Ferrari, Maserati and Alfa Romeo.";
+  "Est. 1975. 30+ years servicing Italian and German exotics in Las Vegas, with concours work for Pebble Beach and the Mille Miglia.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -34,8 +34,7 @@ function AboutPage() {
             who know better.
           </>
         }
-        intro="Italy Service is an independent Las Vegas repair shop dedicated to Italian performance cars and the European exotics that keep them company."
-      />
+intro="Italy Service is an independent Las Vegas repair shop dedicated to Italian performance cars and the German exotics that keep them company — trusted since 1975."      />
       <TrustBar />
       <AboutSplit />
 
