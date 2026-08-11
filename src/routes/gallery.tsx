@@ -5,7 +5,7 @@ import { CtaBand } from "@/components/sections/CtaBand";
 
 const title = "Gallery — The Shop & The Cars | Italy Service Las Vegas";
 const description =
-  "A look inside the Italy Service bays in Las Vegas and the Ferrari, Maserati and Alfa Romeo models we service.";
+  "See inside Italy Service's Las Vegas facility — showroom, storage vault and shop floor.";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
