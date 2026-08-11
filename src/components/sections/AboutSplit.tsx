@@ -1,4 +1,4 @@
-import shopImg from "@/assets/storefront.jpg";
+import shopImg from "@/assets/parking-tower.jpg";
 import { Reveal, MaskReveal } from "@/components/Reveal";
 import { Eyebrow } from "@/components/SectionHeading";
 import { MagneticButton } from "@/components/MagneticButton";
@@ -17,7 +17,7 @@ export function AboutSplit() {
         <MaskReveal>
           <img
             src={shopImg}
-            alt="The Italy Service storefront in Las Vegas with a Lamborghini Murcielago and Ferrari 458 parked out front"
+            alt="Multi-level vehicle storage tower at Italy Service"
             loading="lazy"
             width={1400}
             height={1050}
