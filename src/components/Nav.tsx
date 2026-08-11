@@ -44,7 +44,7 @@ export function Nav() {
               <span className="absolute -bottom-2 left-0 h-px w-full origin-left scale-x-0 bg-primary transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100" />
             </Link>
           ))}
-          <a
+          
             href={site.phoneHref}
             className="flex items-center gap-2 text-[0.72rem] font-medium uppercase tracking-[0.2em] text-foreground"
           >
@@ -85,7 +85,7 @@ export function Nav() {
                   {l.label}
                 </Link>
               ))}
-              <a
+              
                 href={site.phoneHref}
                 className="mt-6 text-sm uppercase tracking-[0.2em] text-primary"
               >
