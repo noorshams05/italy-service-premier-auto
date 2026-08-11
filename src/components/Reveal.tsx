@@ -36,12 +36,15 @@ export function MaskReveal({
   delay?: number;
   className?: string;
 }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: "0px 0px -40px 0px" });
+
   return (
     <motion.div
+      ref={ref}
       className={className}
       initial={{ clipPath: "inset(0 0 100% 0)" }}
-      whileInView={{ clipPath: "inset(0 0 0% 0)" }}
-      viewport={{ once: true, margin: "-60px" }}
+      animate={inView ? { clipPath: "inset(0 0 0% 0)" } : undefined}
       transition={{ duration: 1.1, delay, ease: EASE }}
     >
       {children}
