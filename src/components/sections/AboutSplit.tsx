@@ -1,4 +1,4 @@
-import shopImg from "@/assets/shop.jpg";
+import shopImg from "@/assets/storefront.jpg";
 import { Reveal, MaskReveal } from "@/components/Reveal";
 import { Eyebrow } from "@/components/SectionHeading";
 import { MagneticButton } from "@/components/MagneticButton";
