@@ -44,7 +44,7 @@ export function MaskReveal({
       ref={ref}
       className={className}
       initial={{ clipPath: "inset(0 0 100% 0)" }}
-      animate={inView ? { clipPath: "inset(0 0 0% 0)" } : undefined}
+      animate={{ clipPath: inView ? "inset(0 0 0% 0)" : "inset(0 0 100% 0)" }}
       transition={{ duration: 1.1, delay, ease: EASE }}
     >
       {children}
