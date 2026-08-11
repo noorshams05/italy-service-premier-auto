@@ -40,9 +40,10 @@ export function AboutSplit() {
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Italian cars reward the right hands and punish the wrong ones. We built Italy Service
-              around a single idea: owners in Las Vegas deserve technicians who specialize in these
-              marques, quote honestly, and fix the actual problem the first time.
+              Since 1975, Italy Service has been Las Vegas' trusted name for Ferrari, Maserati,
+              Alfa Romeo and the region's finest German marques. Over 30 years of hands-on
+              experience means our technicians don't guess — they know these platforms inside
+              and out.
             </p>
           </Reveal>
           <Reveal delay={0.22}>
