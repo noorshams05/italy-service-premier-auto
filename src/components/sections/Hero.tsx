@@ -19,7 +19,7 @@ export function Hero() {
       <motion.div style={{ y, scale }} className="absolute inset-0">
         {/* slow continuous parallax drift on top of the scroll parallax */}
         <motion.img
-          src="/logo.png"
+          src={heroImg}
           alt="Ferrari 360 engine bay inside the Italy Service workshop in Las Vegas"
           width={1920}
           height={1088}
@@ -32,7 +32,7 @@ export function Hero() {
       </motion.div>
 
       <img
-        src={logo.url}
+        src="/logo.png"
         alt=""
         aria-hidden
         className="pointer-events-none absolute -right-24 top-1/4 w-[70vw] max-w-[900px] opacity-[0.035]"
