@@ -49,7 +49,7 @@ export function Hero() {
           className="flex items-center gap-3 text-[0.68rem] font-medium uppercase tracking-[0.32em] text-muted-foreground"
         >
           <span className="h-px w-10 bg-primary" />
-          Las Vegas · Since the beginning
+          Las Vegas · Est. 1975
         </motion.p>
 
         <h1 className="mt-8 font-display text-[clamp(3.4rem,15vw,13rem)] font-medium leading-[0.86] tracking-[-0.03em]">
