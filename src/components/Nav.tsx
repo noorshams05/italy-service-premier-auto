@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
-import logo from "@/assets/logo.png.asset.json";
 import { navLinks, site } from "@/data/site";
 import { MagneticButton } from "./MagneticButton";
 
@@ -30,7 +29,7 @@ export function Nav() {
     >
       <div className="mx-auto grid max-w-[1400px] grid-cols-[minmax(0,1fr)_auto] items-center gap-6 px-6 py-4 lg:px-10">
         <Link to="/" className="flex min-w-0 items-center gap-3" aria-label="Italy Service home">
-          <img src={logo.url} alt="Italy Service" className="h-10 w-auto shrink-0 md:h-12" />
+          <img src=/logo.png alt="Italy Service" className="h-10 w-auto shrink-0 md:h-12" />
         </Link>
 
         <nav className="hidden items-center gap-9 lg:flex">
