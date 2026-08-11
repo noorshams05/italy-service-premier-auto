@@ -17,7 +17,7 @@ export function AboutSplit() {
         <MaskReveal>
           <img
             src={shopImg}
-            alt="Inside the Italy Service workshop in Las Vegas"
+            alt="The Italy Service storefront in Las Vegas with a Lamborghini Murcielago and Ferrari 458 parked out front"
             loading="lazy"
             width={1400}
             height={1050}
