@@ -30,30 +30,37 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
   --animate-marquee: marquee 42s linear infinite;
 }
 
 :root {
   --radius: 0px;
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.185 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.185 0 0);
-  --popover-foreground: oklch(0.985 0 0);
+  /* Warm charcoal base (matched to the boutique/vault reference photos) instead of neutral black */
+  --background: oklch(0.16 0.014 62);
+  --foreground: oklch(0.97 0.012 80);
+  --card: oklch(0.205 0.015 62);
+  --card-foreground: oklch(0.97 0.012 80);
+  --popover: oklch(0.205 0.015 62);
+  --popover-foreground: oklch(0.97 0.012 80);
+  /* Ferrari red stays the primary CTA color */
   --primary: oklch(0.52 0.21 25.5);
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.22 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.22 0 0);
-  --muted-foreground: oklch(0.702 0 0);
-  --accent: oklch(0.24 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.24 0.012 62);
+  --secondary-foreground: oklch(0.97 0.012 80);
+  --muted: oklch(0.24 0.012 62);
+  --muted-foreground: oklch(0.72 0.014 70);
+  --accent: oklch(0.26 0.014 62);
+  --accent-foreground: oklch(0.97 0.012 80);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 12%);
-  --input: oklch(1 0 0 / 14%);
+  --border: oklch(0.9 0.02 75 / 12%);
+  --input: oklch(0.9 0.02 75 / 14%);
   --ring: oklch(0.52 0.21 25.5);
+  /* New warm gold accent, pulled from the boutique/vault reference imagery */
+  --gold: oklch(0.74 0.13 82);
+  --gold-foreground: oklch(0.18 0.02 62);
 }
 
 @keyframes marquee {
