@@ -47,9 +47,12 @@ export function AboutSplit() {
             </p>
           </Reveal>
           <Reveal delay={0.22}>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              That's why the same customers keep coming back — and why 163 of them rated us 4.8
-              stars. No mystery labor. No parts you didn't need. Just proper work at a fair price.
+         <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Beyond daily service, we've done concours and event prep work for Pebble Beach and
+              the Mille Miglia — the same standard of care applied to every car that comes through
+              our doors, whether it's headed to a show field or your driveway. It's why 163
+              customers have rated us 4.8 stars: no mystery labor, no parts you didn't need, just
+              proper work at a fair price.
             </p>
           </Reveal>
 
