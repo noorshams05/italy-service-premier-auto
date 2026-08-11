@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import heroImg from "@/assets/hero.jpg";
+import heroImg from "@/assets/showroom-glass-front.jpg";
 import { site } from "@/data/site";
 import { MagneticButton } from "@/components/MagneticButton";
 import { EASE } from "@/components/Reveal";
@@ -20,7 +20,7 @@ export function Hero() {
         {/* slow continuous parallax drift on top of the scroll parallax */}
         <motion.img
           src={heroImg}
-          alt="Ferrari 360 engine bay inside the Italy Service workshop in Las Vegas"
+          alt="Italy Service glass-front showroom at night"
           width={1920}
           height={1088}
           animate={{ scale: [1.08, 1.16, 1.08], x: ["-1.5%", "1.5%", "-1.5%"], y: ["1%", "-1%", "1%"] }}
