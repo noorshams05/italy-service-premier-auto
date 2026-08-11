@@ -20,13 +20,18 @@ export function Nav() {
   useEffect(() => setOpen(false), [pathname]);
 
   return (
-    <header
+   <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         solid || open
           ? "border-b border-border bg-background/95 backdrop-blur-xl"
           : "border-b border-transparent bg-transparent"
       }`}
     >
+      <div className="flex h-[3px] w-full">
+        <div className="flex-1 bg-italy-green" />
+        <div className="flex-1 bg-foreground" />
+        <div className="flex-1 bg-primary" />
+      </div>
       <div className="mx-auto grid max-w-[1400px] grid-cols-[minmax(0,1fr)_auto] items-center gap-6 px-6 py-4 lg:px-10">
         <Link to="/" className="flex min-w-0 items-center gap-3" aria-label="Italy Service home">
           <img src="/logo.png" alt="Italy Service" className="h-10 w-auto shrink-0 md:h-12" />
@@ -48,7 +53,7 @@ export function Nav() {
             href={site.phoneHref}
             className="flex items-center gap-2 text-[0.72rem] font-medium uppercase tracking-[0.2em] text-foreground"
           >
-            <Phone className="h-3.5 w-3.5 text-primary" />
+            <Phone className="h-3.5 w-3.5 text-gold" />
             {site.phone}
           </a>
           <MagneticButton to="/contact" className="!px-6 !py-3">
