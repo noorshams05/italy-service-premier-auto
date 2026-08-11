@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import heroImg from "@/assets/hero.jpg";
-import logo from "@/assets/logo.png.asset.json";
 import { site } from "@/data/site";
 import { MagneticButton } from "@/components/MagneticButton";
 import { EASE } from "@/components/Reveal";
@@ -20,7 +19,7 @@ export function Hero() {
       <motion.div style={{ y, scale }} className="absolute inset-0">
         {/* slow continuous parallax drift on top of the scroll parallax */}
         <motion.img
-          src={heroImg}
+          src="/logo.png"
           alt="Ferrari 360 engine bay inside the Italy Service workshop in Las Vegas"
           width={1920}
           height={1088}
