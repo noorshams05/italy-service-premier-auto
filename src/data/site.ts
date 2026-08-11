@@ -47,7 +47,7 @@ export const services = [
     blurb: "Marque-specific scan tools and real fault tracing — not guesswork parts swapping.",
     detail:
       "We read the car the way the factory does, then verify the fault by hand before quoting a repair. You get the actual cause, in plain language, with a cost you approve first.",
-    image: "diagnostics",
+    image: "engineChassis",
   },
   {
     slug: "brakes-suspension",
@@ -55,7 +55,7 @@ export const services = [
     blurb: "Pads, rotors, bushings, alignment — set up for how the car is actually driven.",
     detail:
       "Carbon ceramic or steel, street or track, we spec the right friction package and finish with a proper four-wheel alignment.",
-    image: "brakes",
+    image: "enzoLift",
   },
   {
     slug: "engine-performance",
@@ -63,7 +63,7 @@ export const services = [
     blurb: "Service, timing, cooling and drivability work on Italian V6, V8 and V12 platforms.",
     detail:
       "Belt and chain service, cooling systems, clutch and F1 transmission work, fluid and tuning refresh — done by technicians who see these engines every week.",
-    image: "engine",
+    image: "engineTeardown",
   },
   {
     slug: "pre-purchase-inspection",
@@ -71,7 +71,7 @@ export const services = [
     blurb: "Know exactly what you're buying before the money moves.",
     detail:
       "A full mechanical, electronic and service-history review with photos and a written summary — the difference between a great buy and an expensive lesson.",
-    image: "detail",
+    image: "enzoDoors",
   },
   {
     slug: "routine-maintenance",
@@ -79,7 +79,7 @@ export const services = [
     blurb: "Annual services, fluids, filters and inspections on a schedule that protects value.",
     detail:
       "We keep records tight and intervals honest so your car stays sharp and its history stays clean.",
-    image: "shop",
+    image: "bb512",
   },
   {
     slug: "warranty-safe-service",
@@ -87,46 +87,58 @@ export const services = [
     blurb: "Independent expertise without dealership pricing — or dealership pressure.",
     detail:
       "Factory-spec parts and documented procedures mean your coverage stays intact while your invoice stays reasonable.",
-    image: "hero",
+    image: "storefront",
   },
 ];
 
 export const reviews = [
   {
     quote:
-      "They found the real problem in an hour after another shop had me chasing parts for weeks. Straight answers, fair price, no games.",
+      "Honest from the first call. They told me what actually needed doing and what could wait, and it has saved me real money over the long run.",
     name: "Ricky C.",
     car: "Alfa Romeo Giulia",
   },
   {
     quote:
-      "Mel walked me through the diagnosis on the phone and showed me the old parts when I picked the car up. That's how it should be done.",
-    name: "Daniel P.",
-    car: "Maserati Ghibli",
+      "Other shops padded the number the moment they heard the word Maserati. These guys quoted fairly and stuck to it.",
+    name: "Manny C.",
+    car: "Maserati",
   },
   {
     quote:
-      "The dealer quoted me nearly double. Italy Service did the work properly and the car has never driven better.",
-    name: "Steven L.",
-    car: "Ferrari 458 Italia",
+      "New to Vegas and dreading dealership prices. Found Italy Service instead and got proper work done for a fraction of it.",
+    name: "Michael O.",
+    car: "Maserati Levante",
   },
   {
     quote:
-      "Brian and Junior clearly know these cars. No upselling, no mystery line items, just the work I actually needed.",
-    name: "Marcus T.",
+      "Fair pricing and a fast turnaround — the dealer wanted far more and would have kept the car much longer.",
+    name: "Erica B.",
+    car: "Fiat",
+  },
+  {
+    quote:
+      "Always on time, always precise. You can tell the technicians are highly trained on these cars.",
+    name: "Matthew C.",
+    car: "Bentley",
+  },
+  {
+    quote:
+      "They go above and beyond for their customers. Every visit has been handled better than I expected.",
+    name: "William M.",
     car: "Alfa Romeo Stelvio",
   },
   {
     quote:
-      "Had them do a pre-purchase inspection before I bought. Detailed, honest, and it saved me from a bad car.",
-    name: "Anthony R.",
-    car: "Maserati GranTurismo",
+      "Called on short notice with a coolant leak. Diagnosed and repaired inside 24 hours.",
+    name: "Jake S.",
+    car: "Alfa Romeo",
   },
   {
     quote:
-      "Gio kept me updated the whole time. Only shop in Vegas I'll let touch my car.",
-    name: "Elena V.",
-    car: "Ferrari California",
+      "Knowledgeable and straight with me. Faster and cheaper than the dealership, with none of the runaround.",
+    name: "Malik S.",
+    car: "General service",
   },
 ];
 
