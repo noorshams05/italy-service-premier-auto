@@ -1,6 +1,6 @@
 export const site = {
   name: "Italy Service",
-  tagline: "Las Vegas' trusted specialists in Ferrari, Maserati & Alfa Romeo service",
+  tagline: "Las Vegas' trusted specialists in Ferrari, Maserati, Alfa Romeo & elite German marques — serving since 1975",
   phone: "702-382-5008",
   phoneHref: "tel:+17023825008",
   email: "Italyservicelv@gmail.com",
@@ -20,14 +20,15 @@ export const navLinks = [
   { label: "Services", to: "/services" },
   { label: "About", to: "/about" },
   { label: "Gallery", to: "/gallery" },
+  { label: "Merch", to: "/merch" },
   { label: "Reviews", to: "/reviews" },
   { label: "Contact", to: "/contact" },
 ] as const;
 
 export const stats = [
   { value: 4.8, suffix: "★", label: `${site.reviewCount} Google reviews`, decimals: 1 },
-  { value: 25, suffix: "+", label: "Years serving Las Vegas" },
-  { value: 6, suffix: "", label: "Italian & exotic marques" },
+  { value: 30, suffix: "+", label: "Years serving Las Vegas" },
+  { value: 8, suffix: "", label: "Italian & German marques" },
   { value: 0, suffix: "", label: "Unnecessary upsells" },
 ];
 
@@ -38,6 +39,8 @@ export const marques = [
   "LAMBORGHINI",
   "BENTLEY",
   "McLAREN",
+  "PORSCHE",
+  "MERCEDES-BENZ",
 ];
 
 export const services = [
@@ -47,7 +50,7 @@ export const services = [
     blurb: "Marque-specific scan tools and real fault tracing — not guesswork parts swapping.",
     detail:
       "We read the car the way the factory does, then verify the fault by hand before quoting a repair. You get the actual cause, in plain language, with a cost you approve first.",
-    image: "engineChassis",
+    image: "galleryStorageTower",
   },
   {
     slug: "brakes-suspension",
@@ -55,15 +58,15 @@ export const services = [
     blurb: "Pads, rotors, bushings, alignment — set up for how the car is actually driven.",
     detail:
       "Carbon ceramic or steel, street or track, we spec the right friction package and finish with a proper four-wheel alignment.",
-    image: "enzoLift",
+    image: "showroomGlassFront",
   },
   {
     slug: "engine-performance",
     title: "Engine & Performance",
-    blurb: "Service, timing, cooling and drivability work on Italian V6, V8 and V12 platforms.",
+    blurb: "Service, timing, cooling and drivability work on Italian and German V6, V8 and V12 platforms.",
     detail:
-      "Belt and chain service, cooling systems, clutch and F1 transmission work, fluid and tuning refresh — done by technicians who see these engines every week.",
-    image: "engineTeardown",
+      "Belt and chain service, cooling systems, clutch and transmission work, fluid and tuning refresh — done by technicians who see these engines every week, across Ferrari, Maserati, Porsche and Mercedes-Benz platforms alike.",
+    image: "boutiqueVault",
   },
   {
     slug: "pre-purchase-inspection",
@@ -71,7 +74,7 @@ export const services = [
     blurb: "Know exactly what you're buying before the money moves.",
     detail:
       "A full mechanical, electronic and service-history review with photos and a written summary — the difference between a great buy and an expensive lesson.",
-    image: "enzoDoors",
+    image: "galleryExteriorDusk",
   },
   {
     slug: "routine-maintenance",
@@ -79,7 +82,7 @@ export const services = [
     blurb: "Annual services, fluids, filters and inspections on a schedule that protects value.",
     detail:
       "We keep records tight and intervals honest so your car stays sharp and its history stays clean.",
-    image: "bb512",
+    image: "parkingTower",
   },
   {
     slug: "warranty-safe-service",
@@ -87,7 +90,7 @@ export const services = [
     blurb: "Independent expertise without dealership pricing — or dealership pressure.",
     detail:
       "Factory-spec parts and documented procedures mean your coverage stays intact while your invoice stays reasonable.",
-    image: "storefront",
+    image: "galleryCollectionCovers",
   },
 ];
 
@@ -144,7 +147,7 @@ export const reviews = [
 
 export const team = [
   { name: "Mel", role: "Service & Diagnostics", bio: "The voice most customers know. Explains the fault, the fix and the cost before anything happens." },
-  { name: "Brian", role: "Technician", bio: "Deep in the Italian platforms — engines, electronics and the problems other shops hand back." },
+  { name: "Brian", role: "Technician", bio: "Deep in the Italian and German platforms — engines, electronics and the problems other shops hand back." },
   { name: "Junior", role: "Technician", bio: "Brakes, suspension and alignment work, finished to the tolerance the car was built to." },
   { name: "Gio", role: "Front of House", bio: "Keeps schedules, updates and paperwork moving so you're never guessing where your car is." },
 ];
