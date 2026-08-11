@@ -18,7 +18,7 @@ export function Footer() {
               Las Vegas' Italian and German specialists since 1975. Ferrari, Maserati, Alfa Romeo,
               Porsche, Mercedes-Benz and more — serviced right.
             </p>
-            <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex gap-4">
               {[Instagram, Facebook, Youtube].map((Icon, i) => (
                 
                   key={i}
