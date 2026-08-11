@@ -1,24 +1,44 @@
 import hero from "@/assets/hero.jpg";
-import engine from "@/assets/engine.jpg";
-import shop from "@/assets/shop.jpg";
-import brakes from "@/assets/brakes.jpg";
-import diagnostics from "@/assets/diagnostics.jpg";
-import detail from "@/assets/detail.jpg";
+import engineTeardown from "@/assets/engine-teardown.jpg";
+import engineChassis from "@/assets/engine-chassis.jpg";
+import storefront from "@/assets/storefront.jpg";
+import cadillac from "@/assets/cadillac.jpg";
+import bb512 from "@/assets/bb512-bay.jpg";
+import enzoLift from "@/assets/enzo-lift.jpg";
+import enzoDoors from "@/assets/enzo-doors.jpg";
+import phantom from "@/assets/phantom.jpg";
+import daytona from "@/assets/daytona.jpg";
+import f348 from "@/assets/348.jpg";
+import p944 from "@/assets/944.jpg";
 
 export const images: Record<string, string> = {
   hero,
-  engine,
-  shop,
-  brakes,
-  diagnostics,
-  detail,
+  engineTeardown,
+  engineChassis,
+  storefront,
+  cadillac,
+  bb512,
+  enzoLift,
+  enzoDoors,
+  phantom,
+  daytona,
+  f348,
+  p944,
 };
 
+export { hero, storefront, engineTeardown, engineChassis };
+
 export const gallery = [
-  { src: hero, alt: "Red Italian exotic in the Italy Service workshop", span: "tall" },
-  { src: engine, alt: "Italian V8 engine bay detail", span: "wide" },
-  { src: shop, alt: "Service bay with an exotic on the lift" },
-  { src: brakes, alt: "Carbon ceramic brake disc and red caliper" },
-  { src: diagnostics, alt: "Diagnostic session in progress", span: "wide" },
-  { src: detail, alt: "Rear taillight detail of a luxury Italian sedan", span: "tall" },
+  { src: enzoLift, alt: "Ferrari Enzo on the alignment rack inside the Italy Service shop", span: "tall" as const },
+  { src: bb512, alt: "Ferrari 512 BB in the bays with a 360 Spider on the lift above", span: "wide" as const },
+  { src: daytona, alt: "Black Ferrari Daytona parked beside a Mondial in the workshop" },
+  { src: enzoDoors, alt: "Ferrari Enzo with both doors open outside the shop" },
+  { src: engineTeardown, alt: "Ferrari V8 engine and chassis mid-teardown", span: "tall" as const },
+  { src: storefront, alt: "Italy Service storefront with a Lamborghini Murcielago and Ferrari 458 out front", span: "wide" as const },
+  { src: f348, alt: "Ferrari 348 in the customer lot" },
+  { src: phantom, alt: "Rolls-Royce Phantom in for service" },
+  { src: p944, alt: "Red Porsche 944 outside the service bay door" },
+  { src: cadillac, alt: "Classic Cadillac under the Italy Service sign", span: "wide" as const },
+  { src: engineChassis, alt: "Ferrari engine and front suspension on a work stand" },
+  { src: hero, alt: "Ferrari 360 engine bay detail" },
 ];
