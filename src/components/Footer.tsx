@@ -4,7 +4,12 @@ import { navLinks, site } from "@/data/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-background">
+<footer className="border-t border-border bg-background">
+      <div className="flex h-[3px] w-full">
+        <div className="flex-1 bg-italy-green" />
+        <div className="flex-1 bg-foreground" />
+        <div className="flex-1 bg-primary" />
+      </div>
       <div className="mx-auto max-w-[1400px] px-6 py-20 lg:px-10">
         <div className="grid gap-14 lg:grid-cols-[1.2fr_1fr_1fr]">
           <div>
@@ -51,15 +56,15 @@ export function Footer() {
             </h3>
             <address className="mt-6 space-y-3 text-sm not-italic text-foreground/80">
               <p>{site.address}</p>
-              <p>
-                <a href={site.phoneHref} className="transition-colors hover:text-primary">
+     <p>
+                <a href={site.phoneHref} className="transition-colors hover:text-gold">
                   {site.phone}
                 </a>
               </p>
               <p>
-                <a
+                
                   href={`mailto:${site.email}`}
-                  className="transition-colors hover:text-primary"
+                  className="transition-colors hover:text-gold"
                 >
                   {site.email}
                 </a>
