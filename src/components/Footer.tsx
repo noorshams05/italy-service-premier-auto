@@ -15,7 +15,7 @@ export function Footer() {
             </p>
             <div className="mt-8 flex gap-4">
               {[Instagram, Facebook, Youtube].map((Icon, i) => (
-                
+                <a
                   key={i}
                   href="#"
                   aria-label="Social profile"
@@ -57,7 +57,7 @@ export function Footer() {
                 </a>
               </p>
               <p>
-                
+                <a
                   href={`mailto:${site.email}`}
                   className="transition-colors hover:text-primary"
                 >
