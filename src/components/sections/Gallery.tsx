@@ -32,7 +32,7 @@ export function Gallery({ heading = true }: { heading?: boolean }) {
           />
         )}
 
-        <div className="mt-20 grid auto-rows-[200px] grid-cols-2 gap-4 sm:auto-rows-[240px] lg:grid-cols-4 lg:gap-6">
+        <div className="mt-20 grid auto-rows-[200px] grid-flow-row-dense grid-cols-2 gap-4 sm:auto-rows-[240px] lg:grid-cols-4 lg:gap-6">
           {gallery.map((g, i) => (
             <MaskReveal
               key={g.src + String(i)}
