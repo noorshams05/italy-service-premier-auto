@@ -4,7 +4,7 @@ import { navLinks, site } from "@/data/site";
 
 export function Footer() {
   return (
-<footer className="border-t border-border bg-background">
+    <footer className="border-t border-border bg-background">
       <div className="flex h-[3px] w-full">
         <div className="flex-1 bg-italy-green" />
         <div className="flex-1 bg-foreground" />
@@ -14,13 +14,13 @@ export function Footer() {
         <div className="grid gap-14 lg:grid-cols-[1.2fr_1fr_1fr]">
           <div>
             <img src="/logo.png" alt="Italy Service" className="h-14 w-auto" />
-     <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
               Las Vegas' Italian and German specialists since 1975. Ferrari, Maserati, Alfa Romeo,
               Porsche, Mercedes-Benz and more — serviced right.
             </p>
             <div className="mt-8 flex gap-4">
               {[Instagram, Facebook, Youtube].map((Icon, i) => (
-                <a
+                
                   key={i}
                   href="#"
                   aria-label="Social profile"
@@ -31,7 +31,6 @@ export function Footer() {
               ))}
             </div>
           </div>
-
           <div>
             <h3 className="text-[0.68rem] font-medium uppercase tracking-[0.3em] text-muted-foreground">
               Navigate
@@ -49,14 +48,13 @@ export function Footer() {
               ))}
             </ul>
           </div>
-
           <div>
             <h3 className="text-[0.68rem] font-medium uppercase tracking-[0.3em] text-muted-foreground">
               Visit
             </h3>
             <address className="mt-6 space-y-3 text-sm not-italic text-foreground/80">
               <p>{site.address}</p>
-     <p>
+              <p>
                 <a href={site.phoneHref} className="transition-colors hover:text-gold">
                   {site.phone}
                 </a>
@@ -79,10 +77,9 @@ export function Footer() {
             </ul>
           </div>
         </div>
-
         <div className="mt-16 flex flex-col gap-3 border-t border-border pt-8 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Italy Service. All rights reserved.</p>
-        <p>
+          <p>
             Independent service center. Not affiliated with Ferrari S.p.A., Maserati S.p.A.,
             Porsche AG, Mercedes-Benz AG or any manufacturer.
           </p>
