@@ -31,7 +31,7 @@ function GalleryPage() {
             The cars.
           </>
         }
-        intro="Dark bays, bright work. A selection of the machines that pass through Tompkins Avenue."
+       intro="More from the shop floor, coming soon."
       />
       <Gallery heading={false} />
       <CtaBand />
