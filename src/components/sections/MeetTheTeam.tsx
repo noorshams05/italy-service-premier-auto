@@ -17,8 +17,6 @@ const leadership = [
 ];
 
 export function MeetTheTeam() {
-
-export function MeetTheTeam() {
   return (
     <section className="border-b border-border py-28 lg:py-40">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
