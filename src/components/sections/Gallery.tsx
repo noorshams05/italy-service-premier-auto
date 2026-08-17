@@ -28,7 +28,7 @@ export function Gallery({ heading = true }: { heading?: boolean }) {
           <SectionHeading
             eyebrow="The shop"
             title={<>Inside the bays.</>}
-            intro="Ferraris on the lifts, classics in the corner and the occasional Phantom out front — this is the real Tompkins Avenue shop."
+            intro="A look at the kind of machines Italy Service works with — more shop photos coming soon."
           />
         )}
 
