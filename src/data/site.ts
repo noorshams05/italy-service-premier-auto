@@ -33,16 +33,7 @@ export const stats = [
   { value: 0, suffix: "", label: "Unnecessary upsells" },
 ];
 
-export const marques = [
-  "FERRARI",
-  "MASERATI",
-  "ALFA ROMEO",
-  "LAMBORGHINI",
-  "BENTLEY",
-  "McLAREN",
-  "PORSCHE",
-  "MERCEDES-BENZ",
-];
+ export const marques = [ "FERRARI", "LAMBORGHINI", "BUGATTI", "ROLLS-ROYCE", "BENTLEY", "LAND ROVER", "MERCEDES-BENZ", ];
 
 export const services = [
   {
