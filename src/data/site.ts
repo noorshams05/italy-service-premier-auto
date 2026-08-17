@@ -4,8 +4,8 @@ export const site = {
   phone: "702-382-5008",
   phoneHref: "tel:+17023825008",
   email: "Italyservicelv@gmail.com",
-  address: "3085 Tompkins, Las Vegas, NV 89103",
-  mapQuery: "3085+Tompkins+Ave,+Las+Vegas,+NV+89103",
+  address: "3085 W Tompkins, Las Vegas, NV 89103",
+  mapQuery: "3085+W+Tompkins+Ave,+Las+Vegas,+NV+89103",
   rating: 4.8,
   reviewCount: 163,
   hours: [
