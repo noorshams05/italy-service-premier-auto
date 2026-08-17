@@ -1,11 +1,19 @@
 import { useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Gauge, Disc3, Cog, ClipboardCheck, Wrench, ShieldCheck } from "lucide-react";
 import { services } from "@/data/site";
-import { images } from "@/lib/images";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
+
+const serviceIcons: Record<string, typeof Gauge> = {
+  diagnostics: Gauge,
+  "brakes-suspension": Disc3,
+  "engine-performance": Cog,
+  "pre-purchase-inspection": ClipboardCheck,
+  "routine-maintenance": Wrench,
+  "warranty-safe-service": ShieldCheck,
+};
 
 function TiltCard({
   index,
@@ -15,8 +23,8 @@ function TiltCard({
   service: (typeof services)[number];
 }) {
   const ref = useRef<HTMLDivElement>(null);
+  const Icon = serviceIcons[service.slug] ?? Gauge;
   const [tilt, setTilt] = useState({ rx: 0, ry: 0 });
-
   const onMove = (e: React.MouseEvent) => {
     const el = ref.current;
     if (!el) return;
@@ -25,7 +33,6 @@ function TiltCard({
     const py = (e.clientY - r.top) / r.height - 0.5;
     setTilt({ rx: -py * 5, ry: px * 5 });
   };
-
   return (
     <div ref={ref} onMouseMove={onMove} onMouseLeave={() => setTilt({ rx: 0, ry: 0 })} className="h-full [perspective:1200px]">
       <motion.div
@@ -37,13 +44,9 @@ function TiltCard({
           to="/services"
           className="group relative flex h-full min-h-[320px] flex-col justify-between overflow-hidden bg-background p-8 lg:p-10"
         >
-          <img
-            src={images[service.image]}
-            alt=""
-            aria-hidden
-            loading="lazy"
-            className="absolute inset-0 h-full w-full scale-105 object-cover opacity-0 transition-all duration-[900ms] ease-out [clip-path:inset(0_0_100%_0)] group-hover:scale-100 group-hover:opacity-30 group-hover:[clip-path:inset(0_0_0_0)]"
-          />
+          <div className="absolute right-8 top-8 flex h-14 w-14 items-center justify-center rounded-full border border-gold/30 bg-secondary text-gold transition-all duration-500 group-hover:border-gold group-hover:bg-gold/10 lg:right-10 lg:top-10">
+            <Icon className="h-6 w-6" strokeWidth={1.5} />
+          </div>
           <div className="relative [transform:translateZ(40px)]">
             <span className="font-display text-sm font-semibold text-primary">
               {String(index + 1).padStart(2, "0")}
@@ -62,10 +65,8 @@ function TiltCard({
     </div>
   );
 }
-
 export function ServicesGrid({ limit }: { limit?: number }) {
   const list = limit ? services.slice(0, limit) : services;
-
   return (
     <section id="services" className="border-b border-border py-28 lg:py-40">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
@@ -80,7 +81,6 @@ export function ServicesGrid({ limit }: { limit?: number }) {
           }
           intro="Six core disciplines, handled in-house by technicians who work on these marques every single day."
         />
-
         <div className="mt-20 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
           {list.map((s, i) => (
             <Reveal key={s.slug} delay={(i % 3) * 0.08}>
