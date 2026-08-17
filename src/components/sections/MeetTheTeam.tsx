@@ -8,12 +8,15 @@ const leadership = [
     role: "Lead Diagnostics Technician — Ex-Formula 1",
     bio: "Joining the team from Formula 1, bringing race-level precision and diagnostics experience to every Italian and German platform that comes through the shop.",
   },
-  {
+ {
     initials: "G",
     name: "Geo",
     role: "Head Technician",
     bio: "The backbone of the shop floor. Deep in the Italian and German platforms — engines, electronics and the problems other shops hand back.",
   },
+];
+
+export function MeetTheTeam() {
 
 export function MeetTheTeam() {
   return (
