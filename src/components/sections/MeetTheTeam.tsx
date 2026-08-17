@@ -14,13 +14,6 @@ const leadership = [
     role: "Head Technician",
     bio: "The backbone of the shop floor. Deep in the Italian and German platforms — engines, electronics and the problems other shops hand back.",
   },
-  {
-    initials: "D",
-    name: "Dustin",
-    role: "General Partner — Vegas Auto Gallery",
-    bio: "Brings the connections and standards of Las Vegas' largest exotic and luxury dealer to the Italy Service partnership.",
-  },
-];
 
 export function MeetTheTeam() {
   return (
