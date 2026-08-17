@@ -73,9 +73,9 @@ export function ServicesGrid({ limit }: { limit?: number }) {
           eyebrow="What we do"
           title={
             <>
-              Everything your Italian
+              Everything your Luxury
               <br />
-              car actually needs.
+              and Exotic car needs.
             </>
           }
           intro="Six core disciplines, handled in-house by technicians who work on these marques every single day."
