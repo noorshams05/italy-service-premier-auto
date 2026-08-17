@@ -28,7 +28,7 @@ export function MeetTheTeam() {
           </h2>
         </Reveal>
 
-        <div className="mt-16 grid gap-px border border-border bg-border md:grid-cols-3">
+        <div className="mt-16 grid gap-px border border-border bg-border md:grid-cols-2">
           {leadership.map((m, i) => (
             <Reveal key={m.name} delay={0.1 + i * 0.08}>
               <div className="flex h-full flex-col bg-background p-8 lg:p-10">
