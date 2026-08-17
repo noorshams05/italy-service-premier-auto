@@ -29,7 +29,7 @@ export const navLinks = [
 export const stats = [
   { value: 4.8, suffix: "★", label: `${site.reviewCount} Google reviews`, decimals: 1 },
   { value: 30, suffix: "+", label: "Years serving Las Vegas" },
-  { value: 8, suffix: "", label: "Italian & German marques" },
+  { value: 7, suffix: "", label: "Luxury & exotic marques" },
   { value: 0, suffix: "", label: "Unnecessary upsells" },
 ];
 
