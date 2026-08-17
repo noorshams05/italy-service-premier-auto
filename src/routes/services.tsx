@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { services } from "@/data/site";
-import { images } from "@/lib/images";
+import { ArrowUpRight, Gauge, Disc3, Cog, ClipboardCheck, Wrench, ShieldCheck } from "lucide-react";
 import { PageHeader } from "@/components/PageHeader";
 import { Reveal, MaskReveal } from "@/components/Reveal";
 import { CtaBand } from "@/components/sections/CtaBand";
