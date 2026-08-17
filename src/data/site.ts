@@ -148,7 +148,6 @@ export const reviews = [
 
 export const team = [
   { name: "Mel", role: "Service & Diagnostics", bio: "The voice most customers know. Explains the fault, the fix and the cost before anything happens." },
-  { name: "Brian", role: "Technician", bio: "Deep in the Italian and German platforms — engines, electronics and the problems other shops hand back." },
   { name: "Junior", role: "Technician", bio: "Brakes, suspension and alignment work, finished to the tolerance the car was built to." },
   { name: "Gio", role: "Front of House", bio: "Keeps schedules, updates and paperwork moving so you're never guessing where your car is." },
 ];
